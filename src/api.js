@@ -1,6 +1,5 @@
 
 const path = require ('path');
-const userPath = process.argv[2];
 const fs = require('fs');
 const fetch = require('node-fetch');
 
@@ -87,29 +86,10 @@ const validateLinks = (arrlinks) => {
   return arrayPromesas;
 }
 
-// const filesMd = searchFileMd(userPath);
-
-// const allLinks = mdFileLinks(filesMd);
-// console.log(allLinks)
-// const linksValidados = validateLinks(allLinks);
-// console.log(linksValidados)
-
-
-
-// Promise.all(linksValidados).then(res => {
-//   console.log(res, 101);
-// })
-// .catch(rej => {
-//   console.log(rej, 104);
-// })
-
-
-
 module.exports = {
 validatePath,
 searchFileMd,
 mdFileLinks,
-convertToAbsolute,
 validateLinks
 }
 
