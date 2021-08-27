@@ -1,11 +1,12 @@
 const api = require("./api.js");
+const {messageErrorRoute} = require('./stats.js');
 const mdLinks = (path, option = { validate: false }) =>
   new Promise((res, rej) => {
     if (api.validatePath(path)) {
       const filesMd = api.searchFileMd(path);
       const allLinks = api.mdFileLinks(filesMd);
       if (allLinks.length === 0) {
-        rej("no hay links");
+        rej("No hay links en estos archivos.");
       } else {
         if (option.validate) {
           const linksValidados = api.validateLinks(allLinks);
@@ -15,10 +16,11 @@ const mdLinks = (path, option = { validate: false }) =>
         }
       }
     } else {
-      rej("no existe la ruta");
+      rej(messageErrorRoute);
     }
   });
 
 module.exports = {
   mdLinks,
 };
+

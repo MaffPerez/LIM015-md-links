@@ -1,20 +1,38 @@
 #!/usr/bin/env node
 const {mdLinks} = require('./mdLinks.js');
-const path = process.argv.slice(2);
+const {statsLinks, brokenLinks, messageHelp} = require('./stats.js');
+const userPath = process.argv[2];
+const options = process.argv.slice(3);
 
-if(path.length === 1){
-    mdLinks(path[0],{validate:false})
+const validate = options.includes("--validate");
+const stats = options.includes("--stats");
+
+if(validate === false){
+    mdLinks(userPath,{validate:false})
     .then((res)=>{
+        if (stats){
+         statsLinks(res)
+        }else{
         console.log(res)
+        }
+        
     }).catch((rej)=>{
         console.log(rej)
     })
 }
-if(path.length === 2){
-    mdLinks(path[0],{validate:true})
+//--validate & --stats
+if(validate){
+    mdLinks(userPath,{validate:true})
     .then((res)=>{
-        console.log(res)
-    }).catch((rej)=>{
+        if (stats){
+            statsLinks(res)
+            brokenLinks(res)
+        }else{
+            console.log(res)
+        }
+    })
+    .catch((rej)=>{
         console.log(rej)
     })
 }
+
