@@ -19,7 +19,7 @@ describe('searchFileMd', () => {
   const resultFile = ['C:\\Users\\Admin\\Documents\\Laboratoria\\LIM015-md-links\\prueba\\prueba2\\archivo3.md'];
 
 
-  it('is a function', () => {
+  it('Is a function', () => {
     expect(typeof api.searchFileMd).toBe('function');
   });
 
@@ -51,7 +51,7 @@ describe('mdFileLinks', () => {
     }
   ]
 
-  it('is a function', () => {
+  it('Is a function', () => {
     expect(typeof api.mdFileLinks).toBe('function');
   });
   it('If it is a directory returns an array of .md file paths', () => {
@@ -61,7 +61,7 @@ describe('mdFileLinks', () => {
 
 describe('validateLinks', () => {
 
-  it('is a function', () => {
+  it('Is a function', () => {
     expect(typeof api.validateLinks).toBe('function');
   });
 });
