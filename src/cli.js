@@ -21,8 +21,8 @@ if(options.length === 0){
     mdLinks(userPath,{validate:true})
     .then((res)=>{
         if (stats){
-        statsLinks(res);
-        brokenLinks(res);
+        console.log(statsLinks(res));
+        console.log(brokenLinks(res));
         }else{
         console.log(res);
         }
@@ -33,50 +33,20 @@ if(options.length === 0){
     }else if (stats) {
     mdLinks(userPath, {validate:true})
     .then((res)=>{
-        statsLinks(res);
+        console.log(statsLinks(res));
     })
     .catch((rej)=>{
         console.log(rej);
     })
     }else{
-    mdLinks(userPath, {validate:true})
-    .then(()=>{
-        console.log(messageHelp);
-    })
-    .catch(()=>{
-        console.log("xd");
-    })
+        mdLinks(userPath, {validate:true})
+        .then(()=>{
+            console.log(messageHelp);
+        })
+        .catch(()=>{
+            console.log("xd");
+        })
     }
 }
-
-
-// if(validate === false){
-//     mdLinks(userPath,{validate:false})
-//     .then((res)=>{
-//         if (stats){
-//          statsLinks(res)
-//         }else{
-//         console.log(res)
-//         }
-        
-//     }).catch((rej)=>{
-//         console.log(rej)
-//     })
-// }
-// //--validate & --stats
-// if(validate){
-//     mdLinks(userPath,{validate:true})
-//     .then((res)=>{
-//         if (stats){
-//             statsLinks(res)
-//             brokenLinks(res)
-//         }else{
-//             console.log(res)
-//         }
-//     })
-//     .catch((rej)=>{
-//         console.log(rej)
-//     })
-// }
 
 

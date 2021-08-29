@@ -4,13 +4,13 @@ const statsLinks = (arr) => {
   const totalLinks = arr.length;
   const uniqueLinks = new Set(arr.map(link=>link.href));
   const stats = `Total: ${totalLinks}\nUnique: ${uniqueLinks.size}`;
-  return console.log(stats);
+  return stats;
 }
 
 const brokenLinks = (arr) =>{
   const brokenFilter = arr.filter((link) => link.message === 'FAIL' );
   const stats = `Broken: ${brokenFilter.length}`;
-  return console.log(stats);
+  return stats;
 }
 
 
