@@ -1,7 +1,7 @@
 const api = require("./api.js");
 const {messageErrorRoute, messageNotLinks} = require('./stats.js');
 
-const mdLinks = (path, option = { validate: false }) =>
+const mdLinks = (path, option) =>
   new Promise((res, rej) => {
     if (api.validatePath(path)) {
       const filesMd = api.searchFileMd(path);
