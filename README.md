@@ -5,8 +5,8 @@
 - [1. Preámbulo](#1-preámbulo)
 - [2. Resumen del proyecto](#2-resumen-del-proyecto)
 - [3. Diagramas de flujo](#3-diagramas-de-flujo)
-- [4. Instalación](#4-consideraciones-generales)
-- [5. Guia de Uso](#5-criterios-de-aceptación-mínimos-del-proyecto)
+- [4. Instalación](#4-instalación)
+- [5. Guia de Uso](#5-guia-de-uso)
 
 
 
@@ -28,3 +28,19 @@ Markdown es un lenguaje de marcado que facilita la aplicación de formato a un t
 
 ## 5.Guía de uso
 
+### Cuando ingresas la ruta
+![alt text](ImageReadme/soloRuta.png)
+### Cuando ingresas una ruta no válida
+![alt text](ImageReadme/opcionNoRoute.png)
+### Cuando ingresas una ruta que no tiene links
+![alt text](ImageReadme/opcionNoLinks.png)
+### Cuando ingresas una ruta válida con opcion --validate
+![alt text](ImageReadme/opcionValidate.png)
+### Cuando ingresas una ruta válida con opcion --stats
+![alt text](ImageReadme/opcionStats.png)
+### Cuando ingresas una ruta válida con opcion --validate --stats
+![alt text](ImageReadme/opcionValidateStats.png)
+### Cuando ingresas una ruta válida con opcion --stats --validate
+![alt text](ImageReadme/opcionStatsValidate.png)
+### Cuando ingresas una ruta válida con opcion validate mal escrito 
+![alt text](ImageReadme/opcionHelp.png)
