@@ -19,10 +19,10 @@ Markdown es un lenguaje de marcado que facilita la aplicación de formato a un t
 **Md-Bears** es una libreria creada a partir de NodeJS, la cual va a leer y analizar archivos (o directorios) en formato Markdown. Creada con el propósito de verificar el estado de los links contenidos y reportar algunas caracteristicas asi como una  herramienta de linea de comando (CLI).
 ## 3. Diagramas de flujo
 ### A P I
-![alt text](imageReadme/diagramaApi.png)
+![alt text](ImageReadme/diagramaApi.png)
 
 ### C L I
-![alt text](imageReadme/diagramaCli.png)
+![alt text](ImageReadme/diagramaCli.png)
 
 ## 4. Instalación
 
