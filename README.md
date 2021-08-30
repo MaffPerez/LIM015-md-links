@@ -40,7 +40,5 @@ Markdown es un lenguaje de marcado que facilita la aplicación de formato a un t
 ![alt text](ImageReadme/opcionStats.png)
 ### Cuando ingresas una ruta válida con opcion --validate --stats
 ![alt text](ImageReadme/opcionValidateStats.png)
-### Cuando ingresas una ruta válida con opcion --stats --validate
-![alt text](ImageReadme/opcionStatsValidate.png)
 ### Cuando ingresas una ruta válida con opcion validate mal escrito 
 ![alt text](ImageReadme/opcionHelp.png)
