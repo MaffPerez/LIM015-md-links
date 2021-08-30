@@ -1,4 +1,4 @@
-# Md-Bears ʕ•́ᴥ•̀ʔっ
+**# Md-Bears ʕ•́ᴥ•̀ʔっ**
 
 ## Índice
 
@@ -13,7 +13,7 @@
 ---
 
 ## 1. Preámbulo
-
+*Markdown es un lenguaje de marcado que facilita la aplicación de formato a un texto empleando una serie de caracteres de una forma especial.*
 ## 2. Resumen del proyecto
 ## 3. Diagramas de flujo
 
