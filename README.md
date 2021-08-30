@@ -25,7 +25,7 @@ Markdown es un lenguaje de marcado que facilita la aplicación de formato a un t
 ![alt text](ImageReadme/diagramaCli.png)
 
 ## 4. Instalación
-
+Se puede instalar mediante npm i md-bears
 ## 5.Guía de uso
 
 ### Cuando ingresas la ruta

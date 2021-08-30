@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "md-bears",
   "version": "0.1.0",
   "description": "Validate links from a markdown file",
   "main": "src/api.js",
